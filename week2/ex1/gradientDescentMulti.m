@@ -21,7 +21,7 @@ for iter = 1:num_iters
 
 
     theta_last = theta;
-    theta = theta_last - alpha/m*sum((X*theta_last-y).*X,1)';
+    theta = theta_last - X'*(X*theta_last-y)*alpha/m;
 
 
 
