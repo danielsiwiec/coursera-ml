@@ -78,17 +78,19 @@ for i = 1:m
 end
 
 
+for j = 1:size(Theta1, 1)
+  for k = 2:size(Theta1, 2)
+    J = J + lambda/(2*m) * (Theta1(j,k))^2;
+  end
+end
 
 
 
-
-
-
-
-
-
-
-
+for j = 1:size(Theta2, 1)
+  for k = 2:size(Theta2, 2)
+    J = J + lambda/(2*m) * (Theta2(j,k))^2;
+  end
+end
 
 
 % -------------------------------------------------------------
